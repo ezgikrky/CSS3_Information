@@ -1,0 +1,48 @@
+/* Burada css formatÄ±nda ayrÄ± bir ÅŸekilde de yazabiliriz*/
+h1{
+    color:pink; /* html de yazdÄ±ÄŸÄ±mÄ±z h1 in rengini yeÅŸil yaptÄ±*/
+    background-color:blue; /* h1 taginin arkasÄ±na mavi renk verir */
+}
+body{
+    
+    background-color:white;
+}
+
+div{
+
+    border:1px solid black;   /* border bu dil iÃ§in bir sÄ±nÄ±r koymaya yarar , border Ä±n tÃ¼rÃ¼nÃ¼ de solid ile normal Ã§izgi ÅŸeklinde alÄ±rÄ±z,dotted nokta nokta ÅŸeklinde,dashed daha uzun Ã§izgilerle,rengini ise direkt tÃ¼rÃ¼nyanÄ±na yazarÄ±z*/
+    margin-top:100px; /* margin-top bizimm divimizin yukarÄ±dan uzunluÄŸuunu belirler.neyin iÃ§indeyse onun uzaklÄ±ÄŸÄ±nÄ± verir */
+    margin-left:100px; /* margin-left soldan uzaklÄ±k*/
+    margin-right:200px; /* saÄŸ taraftan 200 px uzaklÄ±k*/
+    margin-bottom:100px; /*aÅŸaÄŸÄ±dan uzaklÄ±k*/
+    padding:25px; /* padding elementin iÃ§indeki deÄŸerlerin ona olan uzaklÄ±klarÄ± verir*/ 
+    background-color:gray;
+}
+table{
+    border-collapse:collapse; /* collapse bir araya getirip aÃ§madÄ±r sadece table lere Ã¶zel olduÄŸu iÃ§in ayrÄ± yazdÄ±k. collapse ile iÃ§erideki Ã§izgilerden kurtulmuÅŸ olduk*/
+    width:100%; /* tablo geniÅŸlesin diye */
+  }
+  table,th,td{ /* hepsini ayrÄ± ayrÄ± yazmak yerine virgÃ¼lle ayÄ±rÄ±p yazdÄ±ÄŸÄ±mÄ±zda da aynÄ± gÃ¶rÃ¼ntÃ¼ye ulaÅŸabiliyoruz. */
+    border:1px solid black;
+  }
+  th{
+    height:30px;
+    text-align:left;
+    padding-left:10px;
+  }
+  td{
+    height:20px;
+    vertical-align:center;  /*dikeyde yazÄ±larÄ±n center diyerek ortada olmasÄ±nÄ± saÄŸladÄ±k,bottom ise aÅŸaÄŸÄ±,top ta ise yazÄ±lar en Ã¼stte olur*/
+    text-align:left; /* td lerin ortaya gelmesini saÄŸladÄ± center ortaya, right deseydik en saÄŸda olacaklardÄ±.*/
+    padding-left:10px;
+  }
+  tr:hover{ /* hover eventi Ã¼stÃ¼ne geldiÄŸim zaman ne olmasÄ±nÄ± istiyorsak aÅŸaÄŸÄ±da belirtiriz*/
+    background-color:gray;
+  }
+
+  tr:nth-child(even){ /* even Ã§ift demek burda Ã§iftlerin rengi ne olduÄŸunu seÃ§iyoruz.1,2,3*/
+    background-color:purple;
+  }
+  tr:nth-child(odd){ /* odd tek demek*/
+    background-color:blueviolet;
+  }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selectors</title>
+    <style>
+    /* Tüm h1 leri seç*/
+   /* h1{
+       color:purple;
+       background: pink;
+   }
+   p {
+       color:purple;
+       background:pink;
+   } */
+
+     h1,p { /* ayrı ayrı yazmak için birlikte de yazabiliriz.*/
+         color:gray;
+         background:yellow;
+     }
+
+     /*tek bir id de seçebiliyoruz #logo yani id si logo olanı seçiyoruz anlamına gelir.*/
+     #logo {
+         color:whitesmoke;
+         background: lightblue;
+     }
+
+
+     /*class a göre seçmek istersek . kullanarak class ı infoolanları seçiyoruz*/
+     .info{
+         color:purple;
+         background: pink;
+     }
+
+      /*id sı logo olan ve class ı lead olanı beraber  seçmek istersek */
+      #logo, .lead{
+          color:wheat;
+          background: tomato;
+      }
+
+      /* id si 1 olan ve class ı lead olanı seçmek istersek virgül koymayız çünkü aynı p taginin içinde*/
+      #para1.lead{
+          color:thistle;
+          background: turquoise;
+      }
+
+      /* a etiketini seçip ardından da altındaki çizgileri kaldırmak istersek text-decoration tag ini kullanırız */
+      /* a{
+        text-decoration:none; 
+      } */
+
+      /* yalnız <ul> in altındaki <li> nin altındaki a etiketleri kullanmak istersek */
+        ul li a{
+            text-decoration: none;
+        }
+    
+         /* class ı info içinde span olanları seçiyoruz*/
+        .info span{
+            color:red;
+        }
+
+        /* class ı info altındaki class ı primary olanları seçmek istersek  */
+        .info .primary{
+            color:blue;
+        }
+
+        /* html sayfamızdaki tüm elemanları,etiketleri seçmke istersek yazı boyutunu değiştirmek istersek. bu seçicileri web sayfalarımızda tarayıcıdan kaynaklı olarak otomatik özellikler geliyor bunları yok edip biz özellikleri vermek istiyorsak ilk yok edip sonra biz yeni özellik veriyoruz*/
+        *{
+            font-size:30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Header 1</h1>
+    <h1 id="logo">Logo</h1>
+
+    <ul>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+        <li><a href="#">Services</a></li>
+    </ul>
+</header>
+
+    <h1>Header 2</h1>
+    <p id="para1" class="lead info">
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, laudantium!
+    </p>
+    <p class="info">
+     Lorem ipsum <span class="primary">dolor</span>  sit, amet consectetur adipisicing elit. Labore, fuga.    
+    </p>
+
+    <p class="info">
+        Lorem ipsum <span> dolor </span> sit, amet consectetur adipisicing elit. Explicabo, laudantium!
+   </p>
+   <p>Test Paragraph</p>
+
+   <a href="#">Home</a>
+    
+</body>
+</html>
